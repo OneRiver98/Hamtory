@@ -1,0 +1,15 @@
+C:\Users\huy12\OneDrive\바탕 화면\apk\teamRPG\Hamtory\Hamtory\bin\Debug\net6.0\Hamtory.exe
+C:\Users\huy12\OneDrive\바탕 화면\apk\teamRPG\Hamtory\Hamtory\bin\Debug\net6.0\Hamtory.deps.json
+C:\Users\huy12\OneDrive\바탕 화면\apk\teamRPG\Hamtory\Hamtory\bin\Debug\net6.0\Hamtory.runtimeconfig.json
+C:\Users\huy12\OneDrive\바탕 화면\apk\teamRPG\Hamtory\Hamtory\bin\Debug\net6.0\Hamtory.dll
+C:\Users\huy12\OneDrive\바탕 화면\apk\teamRPG\Hamtory\Hamtory\bin\Debug\net6.0\Hamtory.pdb
+C:\Users\huy12\OneDrive\바탕 화면\apk\teamRPG\Hamtory\Hamtory\obj\Debug\net6.0\Hamtory.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\huy12\OneDrive\바탕 화면\apk\teamRPG\Hamtory\Hamtory\obj\Debug\net6.0\Hamtory.AssemblyInfoInputs.cache
+C:\Users\huy12\OneDrive\바탕 화면\apk\teamRPG\Hamtory\Hamtory\obj\Debug\net6.0\Hamtory.AssemblyInfo.cs
+C:\Users\huy12\OneDrive\바탕 화면\apk\teamRPG\Hamtory\Hamtory\obj\Debug\net6.0\Hamtory.csproj.CoreCompileInputs.cache
+C:\Users\huy12\OneDrive\바탕 화면\apk\teamRPG\Hamtory\Hamtory\obj\Debug\net6.0\Hamtory.sourcelink.json
+C:\Users\huy12\OneDrive\바탕 화면\apk\teamRPG\Hamtory\Hamtory\obj\Debug\net6.0\Hamtory.dll
+C:\Users\huy12\OneDrive\바탕 화면\apk\teamRPG\Hamtory\Hamtory\obj\Debug\net6.0\refint\Hamtory.dll
+C:\Users\huy12\OneDrive\바탕 화면\apk\teamRPG\Hamtory\Hamtory\obj\Debug\net6.0\Hamtory.pdb
+C:\Users\huy12\OneDrive\바탕 화면\apk\teamRPG\Hamtory\Hamtory\obj\Debug\net6.0\Hamtory.genruntimeconfig.cache
+C:\Users\huy12\OneDrive\바탕 화면\apk\teamRPG\Hamtory\Hamtory\obj\Debug\net6.0\ref\Hamtory.dll

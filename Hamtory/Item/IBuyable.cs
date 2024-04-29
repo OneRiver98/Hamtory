@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace rpg
+namespace Hamtory
 {
-    public class Portion : Item
+    public interface IBuyable
     {
+        public void Buy();
     }
 }

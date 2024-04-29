@@ -1,11 +1,6 @@
-﻿using System.Formats.Asn1;
-using System.Security.Cryptography.X509Certificates;
-using System;
-using System.Numerics;
-using System.Net.Http.Headers;
+﻿using System.Numerics;
 
-
-namespace rpg
+namespace Hamtory
 {
     internal class Program
     {
@@ -44,7 +39,7 @@ namespace rpg
 
                     case CurrentScene.SHOP_BUY_SCENE:
                         textManager.ShowShopForBuy(player, shopManager);
-                        break;                     
+                        break;
                 }
             }
         }
@@ -52,14 +47,14 @@ namespace rpg
 
         static void Main(string[] args)
         {
-            shopManager.OnBuy += player.Buy;          
+            shopManager.OnBuy += player.Buy;
             shopManager.ShopSetting();
 
             textManager.ShowStartText();
             textManager.ShowMainMenu();
 
             bool isPlaying = true;
-            while(isPlaying)
+            while (isPlaying)
             {
                 string input = Console.ReadLine();
                 switch (currentScene)
@@ -115,7 +110,7 @@ namespace rpg
                         else
                         {
                             bool isEquip = player.inventory.Equip(int.Parse(input));
-                            if(!isEquip)
+                            if (!isEquip)
                             {
                                 textManager.ShowChoiceErrorText();
                             }
@@ -161,4 +156,3 @@ namespace rpg
         }
     }
 }
-

@@ -1,6 +1,11 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace rpg
+namespace Hamtory
 {
     public class Inventory
     {
@@ -23,7 +28,7 @@ namespace rpg
             else
             {
                 Console.WriteLine($"\n{equipment.name}을 장착 했습니다.");
-                equipment.isEquip = true;                
+                equipment.isEquip = true;
             }
             SetStat(equipment, equipment.isEquip);
             return true;
@@ -33,7 +38,7 @@ namespace rpg
         {
             int cal = isEquip ? 1 : -1;
 
-            switch(equipment)
+            switch (equipment)
             {
                 case Armor armor:
                     equipmentStats.DEF += armor.defense * cal;
@@ -54,14 +59,9 @@ namespace rpg
                     equipments.Add(equipment);
                     break;
 
-                case Portion portion:
-                    items.Add(portion);
-                    break;
-
                 default:
                     break;
             }
         }
     }
 }
-

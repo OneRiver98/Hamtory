@@ -1,0 +1,241 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\huy12\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamRPG\\Hamtory\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|c:\\users\\huy12\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamrpg\\hamtory\\hamtory\\item\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|solutionrelative:hamtory\\item\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|c:\\users\\huy12\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamrpg\\hamtory\\hamtory\\player\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|solutionrelative:hamtory\\player\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|c:\\users\\huy12\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamrpg\\hamtory\\hamtory\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|solutionrelative:hamtory\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|c:\\users\\huy12\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamrpg\\hamtory\\hamtory\\enum\\sceneenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|solutionrelative:hamtory\\enum\\sceneenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|c:\\users\\huy12\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamrpg\\hamtory\\hamtory\\item\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|solutionrelative:hamtory\\item\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|c:\\users\\huy12\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamrpg\\hamtory\\hamtory\\item\\ibuyable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|solutionrelative:hamtory\\item\\ibuyable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|c:\\users\\huy12\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamrpg\\hamtory\\hamtory\\item\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|solutionrelative:hamtory\\item\\weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|c:\\users\\huy12\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamrpg\\hamtory\\hamtory\\item\\armor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|solutionrelative:hamtory\\item\\armor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|c:\\users\\huy12\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamrpg\\hamtory\\hamtory\\manager\\textmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|solutionrelative:hamtory\\manager\\textmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|c:\\users\\huy12\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamrpg\\hamtory\\hamtory\\manager\\shopmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|solutionrelative:hamtory\\manager\\shopmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|c:\\users\\huy12\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamrpg\\hamtory\\hamtory\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|solutionrelative:hamtory\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|c:\\users\\huy12\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamrpg\\hamtory\\hamtory\\player\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|solutionrelative:hamtory\\player\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|c:\\users\\huy12\\onedrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamrpg\\hamtory\\hamtory\\buyhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|solutionrelative:hamtory\\buyhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SceneEnum.cs",
+              "DocumentMoniker": "C:\\Users\\huy12\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamRPG\\Hamtory\\Hamtory\\Enum\\SceneEnum.cs",
+              "RelativeDocumentMoniker": "Hamtory\\Enum\\SceneEnum.cs",
+              "ToolTip": "C:\\Users\\huy12\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamRPG\\Hamtory\\Hamtory\\Enum\\SceneEnum.cs",
+              "RelativeToolTip": "Hamtory\\Enum\\SceneEnum.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T03:56:02.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Weapon.cs",
+              "DocumentMoniker": "C:\\Users\\huy12\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamRPG\\Hamtory\\Hamtory\\Item\\Weapon.cs",
+              "RelativeDocumentMoniker": "Hamtory\\Item\\Weapon.cs",
+              "ToolTip": "C:\\Users\\huy12\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamRPG\\Hamtory\\Hamtory\\Item\\Weapon.cs",
+              "RelativeToolTip": "Hamtory\\Item\\Weapon.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T03:55:28.474Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\huy12\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamRPG\\Hamtory\\Hamtory\\Item\\Item.cs",
+              "RelativeDocumentMoniker": "Hamtory\\Item\\Item.cs",
+              "ToolTip": "C:\\Users\\huy12\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamRPG\\Hamtory\\Hamtory\\Item\\Item.cs",
+              "RelativeToolTip": "Hamtory\\Item\\Item.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T03:55:02.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IBuyable.cs",
+              "DocumentMoniker": "C:\\Users\\huy12\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamRPG\\Hamtory\\Hamtory\\Item\\IBuyable.cs",
+              "RelativeDocumentMoniker": "Hamtory\\Item\\IBuyable.cs",
+              "ToolTip": "C:\\Users\\huy12\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamRPG\\Hamtory\\Hamtory\\Item\\IBuyable.cs",
+              "RelativeToolTip": "Hamtory\\Item\\IBuyable.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T03:54:42.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Equipment.cs",
+              "DocumentMoniker": "C:\\Users\\huy12\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamRPG\\Hamtory\\Hamtory\\Item\\Equipment.cs",
+              "RelativeDocumentMoniker": "Hamtory\\Item\\Equipment.cs",
+              "ToolTip": "C:\\Users\\huy12\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamRPG\\Hamtory\\Hamtory\\Item\\Equipment.cs",
+              "RelativeToolTip": "Hamtory\\Item\\Equipment.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T03:54:17.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Armor.cs",
+              "DocumentMoniker": "C:\\Users\\huy12\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamRPG\\Hamtory\\Hamtory\\Item\\Armor.cs",
+              "RelativeDocumentMoniker": "Hamtory\\Item\\Armor.cs",
+              "ToolTip": "C:\\Users\\huy12\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamRPG\\Hamtory\\Hamtory\\Item\\Armor.cs",
+              "RelativeToolTip": "Hamtory\\Item\\Armor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T03:53:56.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\huy12\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamRPG\\Hamtory\\Hamtory\\Program.cs",
+              "RelativeDocumentMoniker": "Hamtory\\Program.cs",
+              "ToolTip": "C:\\Users\\huy12\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamRPG\\Hamtory\\Hamtory\\Program.cs",
+              "RelativeToolTip": "Hamtory\\Program.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAgwBAAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T03:47:28.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TextManager.cs",
+              "DocumentMoniker": "C:\\Users\\huy12\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamRPG\\Hamtory\\Hamtory\\Manager\\TextManager.cs",
+              "RelativeDocumentMoniker": "Hamtory\\Manager\\TextManager.cs",
+              "ToolTip": "C:\\Users\\huy12\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamRPG\\Hamtory\\Hamtory\\Manager\\TextManager.cs",
+              "RelativeToolTip": "Hamtory\\Manager\\TextManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAO8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T03:53:18.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ShopManager.cs",
+              "DocumentMoniker": "C:\\Users\\huy12\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamRPG\\Hamtory\\Hamtory\\Manager\\ShopManager.cs",
+              "RelativeDocumentMoniker": "Hamtory\\Manager\\ShopManager.cs",
+              "ToolTip": "C:\\Users\\huy12\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamRPG\\Hamtory\\Hamtory\\Manager\\ShopManager.cs",
+              "RelativeToolTip": "Hamtory\\Manager\\ShopManager.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T03:52:43.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Stats.cs",
+              "DocumentMoniker": "C:\\Users\\huy12\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamRPG\\Hamtory\\Hamtory\\Player\\Stats.cs",
+              "RelativeDocumentMoniker": "Hamtory\\Player\\Stats.cs",
+              "ToolTip": "C:\\Users\\huy12\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamRPG\\Hamtory\\Hamtory\\Player\\Stats.cs",
+              "RelativeToolTip": "Hamtory\\Player\\Stats.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T03:51:59.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\huy12\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamRPG\\Hamtory\\Hamtory\\Player\\Player.cs",
+              "RelativeDocumentMoniker": "Hamtory\\Player\\Player.cs",
+              "ToolTip": "C:\\Users\\huy12\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamRPG\\Hamtory\\Hamtory\\Player\\Player.cs",
+              "RelativeToolTip": "Hamtory\\Player\\Player.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T03:51:35.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Inventory.cs",
+              "DocumentMoniker": "C:\\Users\\huy12\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamRPG\\Hamtory\\Hamtory\\Player\\Inventory.cs",
+              "RelativeDocumentMoniker": "Hamtory\\Player\\Inventory.cs",
+              "ToolTip": "C:\\Users\\huy12\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamRPG\\Hamtory\\Hamtory\\Player\\Inventory.cs",
+              "RelativeToolTip": "Hamtory\\Player\\Inventory.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAQwDsAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T03:50:58.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BuyHandler.cs",
+              "DocumentMoniker": "C:\\Users\\huy12\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamRPG\\Hamtory\\Hamtory\\BuyHandler.cs",
+              "RelativeDocumentMoniker": "Hamtory\\BuyHandler.cs",
+              "ToolTip": "C:\\Users\\huy12\\OneDrive\\\uBC14\uD0D5 \uD654\uBA74\\apk\\teamRPG\\Hamtory\\Hamtory\\BuyHandler.cs",
+              "RelativeToolTip": "Hamtory\\BuyHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T03:49:46.46Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

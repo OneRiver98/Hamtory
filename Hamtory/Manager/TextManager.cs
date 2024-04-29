@@ -1,19 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection.Emit;
-using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace rpg
+namespace Hamtory
 {
-    public class TextManager
+    internal class TextManager
     {
         public void ShowStartText()
         {
             Console.WriteLine("스파르타 마을에 오신 여러분 환영합니다.");
-            Console.WriteLine("이곳에서 던전으로 들어가기 전 활동을 할 수 있습니다.\n\n");               
+            Console.WriteLine("이곳에서 던전으로 들어가기 전 활동을 할 수 있습니다.\n\n");
         }
 
         public void ShowMainMenu()
@@ -36,7 +34,7 @@ namespace rpg
             Console.WriteLine("\n 0. 나가기\n");
             ShowInputField();
         }
-        
+
         public void ShowInventory(Player player)
         {
             Console.WriteLine("\n---------------------------------------------------");

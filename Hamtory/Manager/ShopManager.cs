@@ -1,6 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace rpg
+namespace Hamtory
 {
     public class ShopManager
     {
@@ -22,11 +26,11 @@ namespace rpg
 
         public bool BuyItem(int num, int playerGold)
         {
-            if(num > items.Count) return false;
+            if (num > items.Count) return false;
 
             Item item = items[num - 1];
 
-            if(item.isBuy)
+            if (item.isBuy)
             {
                 Console.WriteLine($"\n이미 구매한 아이템입니다.");
                 return false;

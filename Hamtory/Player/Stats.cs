@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace rpg
+namespace Hamtory
 {
     public struct Stats
     {
@@ -20,6 +20,5 @@ namespace rpg
             DEF = def;
             HP = hp;
         }
-
     }
 }
