@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.9.34728.123
+VisualStudioVersion = 17.9.34701.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hamtory", "Hamtory\Hamtory.csproj", "{C4624180-0060-4DF5-8BBB-8F40EA018E90}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "rpg", "rpg\rpg.csproj", "{80B0BFFC-24CD-4390-80ED-BD20EBB59879}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C4624180-0060-4DF5-8BBB-8F40EA018E90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C4624180-0060-4DF5-8BBB-8F40EA018E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C4624180-0060-4DF5-8BBB-8F40EA018E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C4624180-0060-4DF5-8BBB-8F40EA018E90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80B0BFFC-24CD-4390-80ED-BD20EBB59879}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80B0BFFC-24CD-4390-80ED-BD20EBB59879}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80B0BFFC-24CD-4390-80ED-BD20EBB59879}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80B0BFFC-24CD-4390-80ED-BD20EBB59879}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {7B77B881-745B-4977-9EF5-FFD7595746B4}
+		SolutionGuid = {E49F74FD-BC6E-4B63-A1C9-2A0444194D0E}
 	EndGlobalSection
 EndGlobal
