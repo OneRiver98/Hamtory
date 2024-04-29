@@ -34,7 +34,7 @@ namespace Hamtory
             return true;
         }
 
-        public void SetStat(Equipment equipment, bool isEquip)
+        private void SetStat(Equipment equipment, bool isEquip)
         {
             int cal = isEquip ? 1 : -1;
 

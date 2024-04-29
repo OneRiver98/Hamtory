@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace Hamtory
 {
-    internal class TextManager
+    public class TextManager
     {
         public void ShowStartText()
         {
@@ -19,7 +20,8 @@ namespace Hamtory
             Console.WriteLine("\n\n---------------------------------------------------");
             Console.WriteLine("1. 상태보기");
             Console.WriteLine("2. 인벤토리");
-            Console.WriteLine("3. 상점\n");
+            Console.WriteLine("3. 상점");
+            Console.WriteLine("4. 전투시작\n");
             ShowInputField();
         }
 
@@ -96,6 +98,28 @@ namespace Hamtory
             ShowInputField();
         }
 
+        public void ShowBattlemap(List<Monster> monsters)
+        {
+            Console.WriteLine("\n---------------------------------------------------");
+            Console.WriteLine("Battle!!\n");
+
+            ShowMonsters(monsters, false);
+
+            Console.WriteLine("\n1. 공격");
+            ShowInputField();
+        }
+
+        public void ShowBattlemapForATTACK(List<Monster> monsters)
+        {
+            Console.WriteLine("\n---------------------------------------------------");
+            Console.WriteLine("Battle!!\n");
+
+            ShowMonsters(monsters, true);
+
+            Console.WriteLine("\n0. 취소\n");
+            Console.WriteLine("대상을 선택해 주세요.");
+            Console.Write(">> ");
+        }
 
 
         public void ShowChoiceErrorText()
@@ -235,6 +259,28 @@ namespace Hamtory
                             Console.WriteLine($" - {i + 1} {weapon.name} | 방어력 +{weapon.damage} | {weapon.explain}");
                         }
                         break;
+                }
+            }
+        }
+        private void ShowMonsters(List<Monster> monsters, bool isNum)
+        {
+            for(int i = 0;  i < monsters.Count; i++)
+            {
+                var stats = monsters[i].stats;
+
+                string hp = stats.HP.ToString();
+                if(stats.HP == 0)
+                {
+                    hp = "Dead";
+                }
+
+                if (!isNum)
+                {
+                    Console.WriteLine($"Lv.{stats.level} {monsters[i].name} HP {hp}");
+                }
+                else
+                {
+                    Console.WriteLine($"{i + 1} Lv.{stats.level} {monsters[i].name} HP {hp}");
                 }
             }
         }

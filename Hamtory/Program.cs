@@ -6,6 +6,8 @@ namespace Hamtory
     {
         private static TextManager textManager = new();
         private static ShopManager shopManager = new();
+        private static DungeonManager dungeonManager = new();
+        private static BattleManager battleManager = new();
         private static Player player = new();
 
         private static CurrentScene CurrentScene = CurrentScene.MAIN_SCENE;
@@ -40,6 +42,14 @@ namespace Hamtory
                     case CurrentScene.SHOP_BUY_SCENE:
                         textManager.ShowShopForBuy(player, shopManager);
                         break;
+
+                    case CurrentScene.BATTLE_SCENE:
+                        textManager.ShowBattlemap(dungeonManager.monsters);
+                        break;
+
+                    case CurrentScene.BATTLE_SCENE_ATTACK:
+                        textManager.ShowBattlemapForATTACK(dungeonManager.monsters);
+                        break;
                 }
             }
         }
@@ -48,7 +58,9 @@ namespace Hamtory
         static void Main(string[] args)
         {
             shopManager.OnBuy += player.Buy;
+
             shopManager.ShopSetting();
+            dungeonManager.MonsterSetting();
 
             textManager.ShowStartText();
             textManager.ShowMainMenu();
@@ -72,6 +84,10 @@ namespace Hamtory
 
                             case "3":
                                 currentScene = CurrentScene.SHOP_SCENE;
+                                break;
+
+                            case "4":
+                                currentScene = CurrentScene.BATTLE_SCENE;
                                 break;
 
                             default:
@@ -148,6 +164,47 @@ namespace Hamtory
                             else
                             {
                                 textManager.ShowShopForBuy(player, shopManager);
+                            }
+                        }
+                        break;
+
+                    case CurrentScene.BATTLE_SCENE:
+
+
+                        if (input == "1")
+                        {
+                            currentScene = CurrentScene.BATTLE_SCENE_ATTACK;
+                        }
+                        else
+                        {
+                            textManager.ShowChoiceErrorText();
+                        }
+                        break;
+
+                    case CurrentScene.BATTLE_SCENE_ATTACK:
+                        if (input == "0")
+                        {
+                            currentScene = CurrentScene.BATTLE_SCENE;
+                        }
+                        else
+                        {
+                            var monster = dungeonManager.AttackEnemy(int.Parse(input));
+                            if(monster == null)
+                            {
+                                textManager.ShowChoiceErrorText();
+                            }
+                            else
+                            {
+                                battleManager.BattleResult(player, monster);
+                                input = Console.ReadLine();
+                                if(input == "0")
+                                {
+                                    Console.WriteLine($"\n몬스터 턴으로");
+                                }
+                                else
+                                {
+                                    textManager.ShowChoiceErrorText();
+                                }
                             }
                         }
                         break;

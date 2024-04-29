@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Hamtory")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0519fac35da74f72044139330878d880d0c3a166")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2a1b3c6793a537a777ee067d943e451a0aac973")]
 [assembly: System.Reflection.AssemblyProductAttribute("Hamtory")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Hamtory")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

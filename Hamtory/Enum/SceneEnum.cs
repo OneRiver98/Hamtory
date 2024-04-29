@@ -14,5 +14,7 @@ namespace Hamtory
         INVENTORY_EQUIP_SCENE,
         SHOP_SCENE,
         SHOP_BUY_SCENE,
+        BATTLE_SCENE,
+        BATTLE_SCENE_ATTACK,
     }
 }
