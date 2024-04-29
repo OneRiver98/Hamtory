@@ -6,19 +6,10 @@ using System.Threading.Tasks;
 
 namespace Hamtory
 {
-    public class Unit : IAttackable, IDamageable
+    public class Unit : IDamageable
     {
         public string name;
         public Stats stats;
-
-        public void Attack(Stats enemyStats)
-        {
-            enemyStats.HP -= stats.ATK;
-            if(enemyStats.HP <= 0)
-            {
-                enemyStats.HP = 0;
-            }
-        }
 
         public void OnAttack(int damage)
         {

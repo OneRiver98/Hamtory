@@ -8,6 +8,31 @@ namespace Hamtory
 {
     public class BattleManager
     {
+        private BattleSceneEnum Scene = BattleSceneEnum.MAIN;
+
+        private BattleSceneEnum scene
+        {
+            get { return Scene; }
+            set
+            {
+                Scene = value;
+                switch (value)
+                {
+                    case BattleSceneEnum.MAIN:
+                        break;
+                    case BattleSceneEnum.MAIN_CHOICE:
+                        break;
+                    case BattleSceneEnum.PLAYER_TURN:
+                        break;
+                    case BattleSceneEnum.ENEMY_TURN:
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+
+
         public void Battle(TextManager textMgr)
         {
             bool isBattle = true;
