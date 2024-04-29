@@ -153,11 +153,11 @@ namespace Hamtory
                     case Weapon weapon:
                         if (weapon.isBuy)
                         {
-                            Console.WriteLine($" - {weapon.name} | 방어력 +{weapon.damage} | {weapon.explain} | 구매완료");
+                            Console.WriteLine($" - {weapon.name} | 공격력 +{weapon.damage} | {weapon.explain} | 구매완료");
                         }
                         else
                         {
-                            Console.WriteLine($" - {weapon.name} | 방어력 +{weapon.damage} | {weapon.explain} | {weapon.price} G");
+                            Console.WriteLine($" - {weapon.name} | 공격력 +{weapon.damage} | {weapon.explain} | {weapon.price} G");
                         }
                         break;
                 }
@@ -183,11 +183,11 @@ namespace Hamtory
                     case Weapon weapon:
                         if (weapon.isBuy)
                         {
-                            Console.WriteLine($" - {i + 1} {weapon.name} | 방어력 +{weapon.damage} | {weapon.explain} | 구매완료");
+                            Console.WriteLine($" - {i + 1} {weapon.name} | 공격력 +{weapon.damage} | {weapon.explain} | 구매완료");
                         }
                         else
                         {
-                            Console.WriteLine($" - {i + 1} {weapon.name} | 방어력 +{weapon.damage} | {weapon.explain} | {weapon.price} G");
+                            Console.WriteLine($" - {i + 1} {weapon.name} | 공격력 +{weapon.damage} | {weapon.explain} | {weapon.price} G");
                         }
                         break;
                 }
@@ -222,11 +222,11 @@ namespace Hamtory
                     case Weapon weapon:
                         if (weapon.isEquip)
                         {
-                            Console.WriteLine($" - [E]{weapon.name} | 방어력 +{weapon.damage} | {weapon.explain}");
+                            Console.WriteLine($" - [E]{weapon.name} | 공격력 +{weapon.damage} | {weapon.explain}");
                         }
                         else
                         {
-                            Console.WriteLine($" - {weapon.name} | 방어력 +{weapon.damage} | {weapon.explain}");
+                            Console.WriteLine($" - {weapon.name} | 공격력 +{weapon.damage} | {weapon.explain}");
                         }
                         break;
                 }
@@ -252,11 +252,11 @@ namespace Hamtory
                     case Weapon weapon:
                         if (weapon.isEquip)
                         {
-                            Console.WriteLine($" - {i + 1} [E]{weapon.name} | 방어력 +{weapon.damage} | {weapon.explain}");
+                            Console.WriteLine($" - {i + 1} [E]{weapon.name} | 공격력 +{weapon.damage} | {weapon.explain}");
                         }
                         else
                         {
-                            Console.WriteLine($" - {i + 1} {weapon.name} | 방어력 +{weapon.damage} | {weapon.explain}");
+                            Console.WriteLine($" - {i + 1} {weapon.name} | 공격력 +{weapon.damage} | {weapon.explain}");
                         }
                         break;
                 }

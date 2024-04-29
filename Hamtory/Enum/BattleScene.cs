@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace Hamtory
 {
-    internal enum BattleSceneEnum
+    public enum BattleScene
     {
         MAIN,
-        MAIN_CHOICE,
-        PLAYER_TURN,
+        PLAYER_CHOICE,
+        PLAYER_ATTACK,
         ENEMY_TURN,
     }
+
+   
 }
