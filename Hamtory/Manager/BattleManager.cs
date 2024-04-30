@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Hamtory
 {
+    
     public class BattleManager
-    {
+    {   
+        private int MonstertunCount = 0;
         private TextManager textManager = new();
         private DungeonManager dungeonManager = new();
 
@@ -104,7 +107,43 @@ namespace Hamtory
                             ///
                         }
                         break;
-
+                    case BattleScene.ENEMY_TURN:
+                        {
+                            if (input == "0") 
+                            {
+                                    MonstertunCount++;
+                                    var monster = dungeonManager.AttackEnemy(MonstertunCount);
+                                    if (monster == null)
+                                    {
+                                        if (MonstertunCount > dungeonManager.monsters.Count)
+                                        {
+                                            currentScene = BattleScene.MAIN;
+                                            MonstertunCount = 0;
+                                        }
+                                        else
+                                        {
+                                            Console.WriteLine("\n0. 다음\n");
+                                            Console.Write(">> ");
+                                         }
+                                        break;
+                                    }
+                                    BattleResult(monster, player);
+                            }
+                            if (MonstertunCount == 0)
+                            {
+                                MonstertunCount++;
+                                var monster = dungeonManager.AttackEnemy(MonstertunCount);
+                                if (monster == null)
+                                {
+                                    Console.WriteLine("\n0. 다음\n");
+                                    Console.Write(">> ");
+                                    break;
+                                }
+                                BattleResult(monster, player);
+                            }
+                            
+                            break;
+                        }
                 }
             }
         }
