@@ -153,14 +153,28 @@ namespace Hamtory
         {
             int damage = attacker.stats.ATK;
             int originHp = defender.stats.HP;
+            bool critical = false;
             if(attacker is Player)
             {
+                Random random = new Random();
+                int probability = random.Next(100);
                 var player = (Player)attacker;
-                damage += player.inventory.equipmentStats.ATK;
+
+                if (probability < 15)
+                {
+                    critical = true;
+                    damage = (int)((damage + player.inventory.equipmentStats.ATK) * 1.6f);
+                }
+                else
+                {
+                    critical = false;
+                    damage += player.inventory.equipmentStats.ATK;
+                }
             }
             defender.OnAttack(damage);
 
             Console.WriteLine($"\n{attacker.name}의 공격 !");
+            Console.WriteLine(critical? "치명타!" : "");
             Console.WriteLine($"{defender.stats.level} {defender.name}을(를) 맞췄습니다. 데미지 : [{damage}]");
 
             Console.WriteLine($"\n{defender.stats.level} {defender.name}");
