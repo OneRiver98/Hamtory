@@ -9,8 +9,9 @@ namespace Hamtory
     public class ShopManager
     {
         public List<Item> items = new();
-
+        public int choicePage = 0;
         public event BuyHandler OnBuy;
+        public int maxPage = 0;
 
         public void ShopSetting()
         {
@@ -29,6 +30,8 @@ namespace Hamtory
             items.Add(new Weapon("피를 바라는 무한의 연사포", "괴상하게 생긴 총이다.", 20, 15000));
             items.Add(new Weapon("화도일문자", "명검이다.", 15, 10000));
             items.Add(new Weapon("루헨델", "어떤 랭커가 사용 하던 검이다.", 30, 50000));
+
+            maxPage = items.Count / 9;
         }
 
         public bool BuyItem(int num, int playerGold)

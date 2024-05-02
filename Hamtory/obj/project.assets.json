@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\huy12\\.nuget\\packages\\": {}
+    "C:\\Users\\82104\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\huy12\\OneDrive\\바탕 화면\\apk\\teamRPG\\Hamtory\\Hamtory\\Hamtory.csproj",
+      "projectUniqueName": "E:\\비쥬얼코드 C#\\Hamtory\\Hamtory\\Hamtory.csproj",
       "projectName": "Hamtory",
-      "projectPath": "C:\\Users\\huy12\\OneDrive\\바탕 화면\\apk\\teamRPG\\Hamtory\\Hamtory\\Hamtory.csproj",
-      "packagesPath": "C:\\Users\\huy12\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\huy12\\OneDrive\\바탕 화면\\apk\\teamRPG\\Hamtory\\Hamtory\\obj\\",
+      "projectPath": "E:\\비쥬얼코드 C#\\Hamtory\\Hamtory\\Hamtory.csproj",
+      "packagesPath": "C:\\Users\\82104\\.nuget\\packages\\",
+      "outputPath": "E:\\비쥬얼코드 C#\\Hamtory\\Hamtory\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\huy12\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\82104\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -66,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
       }
     }
   }

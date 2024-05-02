@@ -139,6 +139,28 @@ namespace Hamtory.Manager
                         {
                             currentScene = MainScene.SHOP_BUY;
                         }
+                        if ( input == "2")
+                        {
+                            ++shopManager.choicePage;
+                            if (shopManager.maxPage < shopManager.choicePage)
+                            {
+                                Console.WriteLine("마지막 페이지 입니다.");
+                                --shopManager.choicePage;
+                            }
+                            currentScene = MainScene.SHOP;
+                        }
+                        if ( input == "3")
+                        {
+                            if (shopManager.choicePage == 0)
+                            {
+                                Console.WriteLine("첫 번째 페이지입니다.");
+                            }
+                            else
+                            {
+                                --shopManager.choicePage;
+                            }
+                            currentScene = MainScene.SHOP;
+                        }
                         else if (input == "0")
                         {
                             currentScene = MainScene.MENU;

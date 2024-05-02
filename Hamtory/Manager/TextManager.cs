@@ -78,6 +78,8 @@ namespace Hamtory
             ShowShopItems(shop.items);
 
             Console.WriteLine("\n1. 아이템 구매");
+            Console.WriteLine("2. 다음 페이지");
+            Console.WriteLine("3. 전 페이지\n");
             Console.WriteLine("0. 나가기\n");
             ShowInputField();
         }
@@ -92,7 +94,7 @@ namespace Hamtory
             Console.WriteLine($"{player.gold} G\n");
 
             Console.WriteLine($"[아이템목록]");
-            ShowShopItemsForBuy(shop.items);
+            ShowShopItemsForBuy(shop.items, shop);
 
             Console.WriteLine("\n0. 나가기\n");
             ShowInputField();
@@ -163,9 +165,10 @@ namespace Hamtory
                 }
             }
         }
-        private void ShowShopItemsForBuy(List<Item> items)
+
+        private void ShowShopItemsForBuy(List<Item> items, ShopManager shop)
         {
-            for (int i = 0; i < items.Count; i++)
+            for (int i = 0+9*shop.choicePage; i < items.Count; i++)
             {
                 Item item = items[i];
                 switch (item)
@@ -193,6 +196,8 @@ namespace Hamtory
                 }
             }
         }
+
+
         private void ShowPlayerInfo(Player player)
         {
             Console.WriteLine($"Lv. {player.stats.level}");
