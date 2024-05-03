@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "E:\\\uBE44\uC96C\uC5BC\uCF54\uB4DC C#\\Hamtory\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|e:\\\uBE44\uC96C\uC5BC\uCF54\uB4DC c#\\hamtory\\hamtory\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|solutionrelative:hamtory\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|e:\\\uBE44\uC96C\uC5BC\uCF54\uB4DC c#\\hamtory\\hamtory\\manager\\textmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|solutionrelative:hamtory\\manager\\textmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|e:\\\uBE44\uC96C\uC5BC\uCF54\uB4DC c#\\hamtory\\hamtory\\player\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|solutionrelative:hamtory\\player\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|e:\\\uBE44\uC96C\uC5BC\uCF54\uB4DC c#\\hamtory\\hamtory\\manager\\shopmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|solutionrelative:hamtory\\manager\\shopmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,16 +31,8 @@
       "RelativeMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|solutionrelative:hamtory\\monster\\dungeonmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|e:\\\uBE44\uC96C\uC5BC\uCF54\uB4DC c#\\hamtory\\hamtory\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|solutionrelative:hamtory\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|e:\\\uBE44\uC96C\uC5BC\uCF54\uB4DC c#\\hamtory\\hamtory\\interface\\idamageable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|solutionrelative:hamtory\\interface\\idamageable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|e:\\\uBE44\uC96C\uC5BC\uCF54\uB4DC c#\\hamtory\\hamtory\\manager\\textmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|solutionrelative:hamtory\\manager\\textmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|e:\\\uBE44\uC96C\uC5BC\uCF54\uB4DC c#\\hamtory\\hamtory\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|e:\\\uBE44\uC96C\uC5BC\uCF54\uB4DC c#\\hamtory\\hamtory\\enum\\mainscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|solutionrelative:hamtory\\enum\\mainscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|e:\\\uBE44\uC96C\uC5BC\uCF54\uB4DC c#\\hamtory\\hamtory\\player\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|solutionrelative:hamtory\\player\\stats.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0FD9D461-157A-4EC6-A91F-41F452F9F952}|Hamtory\\Hamtory.csproj|e:\\\uBE44\uC96C\uC5BC\uCF54\uB4DC c#\\hamtory\\hamtory\\manager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,11 +62,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 207,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\\uBE44\uC96C\uC5BC\uCF54\uB4DC C#\\Hamtory\\Hamtory\\Program.cs",
               "RelativeDocumentMoniker": "Hamtory\\Program.cs",
@@ -75,12 +75,11 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T07:20:00.141Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
               "Title": "Stats.cs",
               "DocumentMoniker": "E:\\\uBE44\uC96C\uC5BC\uCF54\uB4DC C#\\Hamtory\\Hamtory\\Player\\Stats.cs",
               "RelativeDocumentMoniker": "Hamtory\\Player\\Stats.cs",
@@ -98,33 +97,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "ShopManager.cs",
               "DocumentMoniker": "E:\\\uBE44\uC96C\uC5BC\uCF54\uB4DC C#\\Hamtory\\Hamtory\\Manager\\ShopManager.cs",
               "RelativeDocumentMoniker": "Hamtory\\Manager\\ShopManager.cs",
               "ToolTip": "E:\\\uBE44\uC96C\uC5BC\uCF54\uB4DC C#\\Hamtory\\Hamtory\\Manager\\ShopManager.cs",
               "RelativeToolTip": "Hamtory\\Manager\\ShopManager.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAADwvxgAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T08:22:19.866Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "TextManager.cs",
               "DocumentMoniker": "E:\\\uBE44\uC96C\uC5BC\uCF54\uB4DC C#\\Hamtory\\Hamtory\\Manager\\TextManager.cs",
               "RelativeDocumentMoniker": "Hamtory\\Manager\\TextManager.cs",
               "ToolTip": "E:\\\uBE44\uC96C\uC5BC\uCF54\uB4DC C#\\Hamtory\\Hamtory\\Manager\\TextManager.cs",
               "RelativeToolTip": "Hamtory\\Manager\\TextManager.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABEAAAAiAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-02T05:31:51.645Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "MainScene.cs",
               "DocumentMoniker": "E:\\\uBE44\uC96C\uC5BC\uCF54\uB4DC C#\\Hamtory\\Hamtory\\Enum\\MainScene.cs",
               "RelativeDocumentMoniker": "Hamtory\\Enum\\MainScene.cs",
@@ -132,8 +131,7 @@
               "RelativeToolTip": "Hamtory\\Enum\\MainScene.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T11:20:26.901Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T11:20:26.901Z"
             },
             {
               "$type": "Document",
@@ -163,11 +161,11 @@
         },
         {
           "DockedWidth": 193,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "BattleManager.cs",
               "DocumentMoniker": "E:\\\uBE44\uC96C\uC5BC\uCF54\uB4DC C#\\Hamtory\\Hamtory\\Manager\\BattleManager.cs",
               "RelativeDocumentMoniker": "Hamtory\\Manager\\BattleManager.cs",
@@ -176,18 +174,17 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T11:01:31.003Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Player.cs",
               "DocumentMoniker": "E:\\\uBE44\uC96C\uC5BC\uCF54\uB4DC C#\\Hamtory\\Hamtory\\Player\\Player.cs",
               "RelativeDocumentMoniker": "Hamtory\\Player\\Player.cs",
               "ToolTip": "E:\\\uBE44\uC96C\uC5BC\uCF54\uB4DC C#\\Hamtory\\Hamtory\\Player\\Player.cs",
               "RelativeToolTip": "Hamtory\\Player\\Player.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T07:27:58.489Z",
               "IsPinned": true,
@@ -195,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "DungeonManager.cs",
               "DocumentMoniker": "E:\\\uBE44\uC96C\uC5BC\uCF54\uB4DC C#\\Hamtory\\Hamtory\\Monster\\DungeonManager.cs",
               "RelativeDocumentMoniker": "Hamtory\\Monster\\DungeonManager.cs",
@@ -204,8 +201,7 @@
               "ViewState": "AQIAABMAAAAAAAAAAAAAwAcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-29T11:05:30.326Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -218,8 +214,7 @@
               "ViewState": "AQIAABkAAAAAAAAAAAAAwAYAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-02T06:21:25.372Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -235,7 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "BuyHandler.cs",
               "DocumentMoniker": "E:\\\uBE44\uC96C\uC5BC\uCF54\uB4DC C#\\Hamtory\\Hamtory\\BuyHandler.cs",
               "RelativeDocumentMoniker": "Hamtory\\BuyHandler.cs",
@@ -248,7 +243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "IDamageable.cs",
               "DocumentMoniker": "E:\\\uBE44\uC96C\uC5BC\uCF54\uB4DC C#\\Hamtory\\Hamtory\\Interface\\IDamageable.cs",
               "RelativeDocumentMoniker": "Hamtory\\Interface\\IDamageable.cs",
@@ -256,8 +251,7 @@
               "RelativeToolTip": "Hamtory\\Interface\\IDamageable.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T11:02:20.15Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T11:02:20.15Z"
             }
           ]
         }

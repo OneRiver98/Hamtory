@@ -9,19 +9,44 @@ namespace Hamtory
 {
     public class TextManager
     {
+        internal static void PrintGameHeader()
+        {
+            Console.WriteLine("____ ___ _______.___ ________________.___.________ ________     _________ ____ ___");
+            Console.WriteLine("|    |\\\\      \\  |   |\\__ ___/\\__ |   | / _____ / \\_____  \\   / _____ /|    |   \\");
+            Console.WriteLine("|    |   \\\\      \\  |   |\\__ ___/\\__ |   | / _____ / \\_____  \\   / _____ /|    |   \\ ");
+            Console.WriteLine("|   //   |   \\ |   |  |    |    /   |   |/   \\  ___  /   |   \\  \\_____  \\ |    |   /");
+            Console.WriteLine("|  //    |    \\|   |  |    |    \\____   |\\    \\_\\  \\/    |    \\ /        \\|    |  /");
+            Console.WriteLine("| ______ / \\____ | __ /| ___ |  | ____ |    / ______ | \\______ /\\_______  //_______  /|______/");
+            Console.WriteLine("\\/                  \\/               \\/         \\/         \\/");
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("아무키나 누르시오.");
+            Console.ReadLine();
+        }
         public void ShowStartText()
         {
-            Console.WriteLine("스파르타 마을에 오신 여러분 환영합니다.");
-            Console.WriteLine("이곳에서 던전으로 들어가기 전 활동을 할 수 있습니다.\n\n");
+            PrintGameHeader();
         }
 
         public void ShowMainMenu()
         {
-            Console.WriteLine("\n\n---------------------------------------------------");
+            Console.WriteLine("던전 가야대");
+            Console.WriteLine("가기 전에 정비를 하자.\n\n");
+            Console.WriteLine("ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ");
+            Console.WriteLine(" __");
+            Console.WriteLine(" ____ _/  |_  ____   ");
+            Console.WriteLine(" /  _ \\\\   __\\/  _ \\");
+            Console.WriteLine("(  <_> )|  | (  <_> )");
+            Console.WriteLine(" \\____/ |__|  \\____/");
+            Console.WriteLine("        ______");
+            Console.WriteLine("       /_____/");
+            Console.WriteLine("       /_____/");
+            Console.WriteLine();
+            Console.WriteLine();
             Console.WriteLine("1. 상태보기");
             Console.WriteLine("2. 인벤토리");
             Console.WriteLine("3. 상점");
-            Console.WriteLine("4. 전투시작\n");
+            Console.WriteLine("4. 던전입장\n");
             ShowInputField();
         }
 
@@ -29,7 +54,7 @@ namespace Hamtory
         {
             Console.WriteLine("\n---------------------------------------------------");
             Console.WriteLine("상태보기");
-            Console.WriteLine("캐릭터의 정보가 표시됩니다.\n");
+            Console.WriteLine("햄스터의 정보가 표시됩니다.\n");
 
             ShowPlayerInfo(player);
 
