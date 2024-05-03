@@ -6,18 +6,18 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hamtory.Manager
+namespace Hamtory
 {
-    public class GameManager
+    public class MainScene
     {
-        private TextManager textManager = new();
-        private ShopManager shopManager = new();
-        private BattleManager battleManager = new();
+        private MainTextManager textManager = new();
+        private Shop shopManager = new();
+        private BattleScene battleManager = new();
 
         private Player player = new();
 
-        private MainScene Scene = MainScene.MENU;
-        private MainScene currentScene
+        private MainState Scene = MainState.MENU;
+        private MainState currentScene
         {
             get { return Scene; }
             set
@@ -25,27 +25,27 @@ namespace Hamtory.Manager
                 Scene = value;
                 switch (value)
                 {
-                    case MainScene.MENU:
+                    case MainState.MENU:
                         textManager.ShowMainMenu();
                         break;
 
-                    case MainScene.STATE:
-                        textManager.ShowPlayerState(player);
+                    case MainState.STATE:
+                        textManager.ShowPlayerInfo(player);
                         break;
 
-                    case MainScene.INVENTORY:
+                    case MainState.INVENTORY:
                         textManager.ShowInventory(player);
                         break;
 
-                    case MainScene.INVENTORY_EQUIP:
+                    case MainState.INVENTORY_EQUIP:
                         textManager.ShowInventoryForEquipment(player);
                         break;
 
-                    case MainScene.SHOP:
+                    case MainState.SHOP:
                         textManager.ShowShop(player, shopManager);
                         break;
 
-                    case MainScene.SHOP_BUY:
+                    case MainState.SHOP_BUY:
                         textManager.ShowShopForBuy(player, shopManager);
                         break;
 
@@ -58,7 +58,15 @@ namespace Hamtory.Manager
             shopManager.OnBuy += player.Buy;
             shopManager.ShopSetting();
 
-            textManager.ShowStartText();
+            string s = $"{player.stats.DEF}";
+
+            Console.WriteLine($"테스트 {s}");
+
+
+
+            textManager.ShowTitle();
+            string name = Console.ReadLine();
+            player.name = name;
             textManager.ShowMainMenu();
 
             bool isPlaying = true;
@@ -68,19 +76,19 @@ namespace Hamtory.Manager
 
                 switch (currentScene)
                 {
-                    case MainScene.MENU:
+                    case MainState.MENU:
                         switch (input)
                         {
                             case "1":
-                                currentScene = MainScene.STATE;
+                                currentScene = MainState.STATE;
                                 break;
 
                             case "2":
-                                currentScene = MainScene.INVENTORY;
+                                currentScene = MainState.INVENTORY;
                                 break;
 
                             case "3":
-                                currentScene = MainScene.SHOP;
+                                currentScene = MainState.SHOP;
                                 break;
 
                             case "4":
@@ -93,32 +101,32 @@ namespace Hamtory.Manager
                         }
                         break;
 
-                    case MainScene.STATE:
+                    case MainState.STATE:
                         if (input == "0")
                         {
-                            currentScene = MainScene.MENU;
+                            currentScene = MainState.MENU;
 
                         }
                         else textManager.ShowChoiceErrorText();
                         break;
 
-                    case MainScene.INVENTORY:
+                    case MainState.INVENTORY:
                         if (input == "1")
                         {
-                            currentScene = MainScene.INVENTORY_EQUIP;
+                            currentScene = MainState.INVENTORY_EQUIP;
                         }
                         else if (input == "0")
                         {
-                            currentScene = MainScene.MENU;
+                            currentScene = MainState.MENU;
 
                         }
                         else textManager.ShowChoiceErrorText();
                         break;
 
-                    case MainScene.INVENTORY_EQUIP:
+                    case MainState.INVENTORY_EQUIP:
                         if (input == "0")
                         {
-                            currentScene = MainScene.MENU;
+                            currentScene = MainState.MENU;
                         }
                         else
                         {
@@ -134,10 +142,10 @@ namespace Hamtory.Manager
                         }
                         break;
 
-                    case MainScene.SHOP:
+                    case MainState.SHOP:
                         if (input == "1")
                         {
-                            currentScene = MainScene.SHOP_BUY;
+                            currentScene = MainState.SHOP_BUY;
                         }
                         else if ( input == "2")
                         {
@@ -147,7 +155,7 @@ namespace Hamtory.Manager
                                 Console.WriteLine("마지막 페이지 입니다.");
                                 --shopManager.page;
                             }
-                            currentScene = MainScene.SHOP;
+                            currentScene = MainState.SHOP;
                         }
                         else if ( input == "3")
                         {
@@ -159,19 +167,19 @@ namespace Hamtory.Manager
                             {
                                 --shopManager.page;
                             }
-                            currentScene = MainScene.SHOP;
+                            currentScene = MainState.SHOP;
                         }
                         else if (input == "0")
                         {
-                            currentScene = MainScene.MENU;
+                            currentScene = MainState.MENU;
                         }
                         else textManager.ShowChoiceErrorText();
                         break;
 
-                    case MainScene.SHOP_BUY:
+                    case MainState.SHOP_BUY:
                         if (input == "0")
                         {
-                            currentScene = MainScene.MENU;
+                            currentScene = MainState.MENU;
                         }
                         else
                         {

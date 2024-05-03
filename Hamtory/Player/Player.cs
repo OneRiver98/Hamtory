@@ -16,8 +16,7 @@ namespace Hamtory
 
         public Player()
         {
-            name = "전사";
-            stats = new(stats.level = 1, stats.ATK = 10, stats.DEF = 5, stats.HP = 100);
+            stats = new(stats.level = 1, stats.ATK = 1000, stats.DEF = 5, stats.HP = 100);
         }
 
         public void Buy(int price, Item item)

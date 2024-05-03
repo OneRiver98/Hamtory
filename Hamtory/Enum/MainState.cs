@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace Hamtory
 {
-    public enum BattleScene
+    public enum MainState
     {
-        MAIN,
-        PLAYER_CHOICE,
-        PLAYER_ATTACK,
-        ENEMY_TURN,
+        MENU,
+        STATE,
+        INVENTORY,
+        INVENTORY_EQUIP,
+        SHOP,
+        SHOP_BUY
     }
-
-   
 }

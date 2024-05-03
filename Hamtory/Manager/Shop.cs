@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hamtory
 {
-    public class ShopManager
+    public class Shop
     {
         public List<Item> items = new();
         public int page = 0;

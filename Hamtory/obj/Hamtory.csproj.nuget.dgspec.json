@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\비쥬얼코드 C#\\Hamtory\\Hamtory\\Hamtory.csproj": {}
+    "C:\\Users\\huy12\\OneDrive\\바탕 화면\\apk\\teamRPG\\Hamtory\\Hamtory\\Hamtory.csproj": {}
   },
   "projects": {
-    "E:\\비쥬얼코드 C#\\Hamtory\\Hamtory\\Hamtory.csproj": {
+    "C:\\Users\\huy12\\OneDrive\\바탕 화면\\apk\\teamRPG\\Hamtory\\Hamtory\\Hamtory.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\비쥬얼코드 C#\\Hamtory\\Hamtory\\Hamtory.csproj",
+        "projectUniqueName": "C:\\Users\\huy12\\OneDrive\\바탕 화면\\apk\\teamRPG\\Hamtory\\Hamtory\\Hamtory.csproj",
         "projectName": "Hamtory",
-        "projectPath": "E:\\비쥬얼코드 C#\\Hamtory\\Hamtory\\Hamtory.csproj",
-        "packagesPath": "C:\\Users\\82104\\.nuget\\packages\\",
-        "outputPath": "E:\\비쥬얼코드 C#\\Hamtory\\Hamtory\\obj\\",
+        "projectPath": "C:\\Users\\huy12\\OneDrive\\바탕 화면\\apk\\teamRPG\\Hamtory\\Hamtory\\Hamtory.csproj",
+        "packagesPath": "C:\\Users\\huy12\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\huy12\\OneDrive\\바탕 화면\\apk\\teamRPG\\Hamtory\\Hamtory\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\82104\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\huy12\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

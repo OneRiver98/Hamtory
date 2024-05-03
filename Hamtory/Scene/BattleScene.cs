@@ -7,16 +7,15 @@ using System.Threading;
 using System.Threading.Tasks;
 
 namespace Hamtory
-{
-    
-    public class BattleManager
+{   
+    public class BattleScene
     {   
         private int MonstertunCount = 0;
-        private TextManager textManager = new();
+        private BattleTextManager textManager = new();
         private DungeonManager dungeonManager = new();
 
-        private BattleScene Scene = BattleScene.MAIN;
-        private BattleScene currentScene
+        private BattleState Scene = BattleState.MAIN;
+        private BattleState currentScene
         {
             get { return Scene; }
             set
@@ -24,18 +23,18 @@ namespace Hamtory
                 Scene = value;
                 switch (value)
                 {
-                    case BattleScene.MAIN:
+                    case BattleState.MAIN:
                         textManager.ShowBattlemap(dungeonManager.monsters);
                         break;
 
-                    case BattleScene.PLAYER_CHOICE:
+                    case BattleState.PLAYER_CHOICE:
                         textManager.ShowBattlemapForATTACK(dungeonManager.monsters);
                         break;
 
-                    case BattleScene.PLAYER_ATTACK:
+                    case BattleState.PLAYER_ATTACK:
                         break;
 
-                    case BattleScene.ENEMY_TURN:
+                    case BattleState.ENEMY_ATTACK:
                         break;
 
                     default:
@@ -47,7 +46,7 @@ namespace Hamtory
         public void StartBattle(Player player)
         {
             dungeonManager.MonsterSetting();
-            Scene = BattleScene.MAIN;
+            Scene = BattleState.MAIN;
             textManager.ShowBattlemap(dungeonManager.monsters);
             bool isBattle = true;
             while(isBattle)
@@ -59,10 +58,10 @@ namespace Hamtory
 
                 switch(currentScene)
                 {
-                    case BattleScene.MAIN:
+                    case BattleState.MAIN:
                         if(input == "1")
                         {
-                            currentScene = BattleScene.PLAYER_CHOICE;
+                            currentScene = BattleState.PLAYER_CHOICE;
                         }
                         else
                         {
@@ -70,10 +69,10 @@ namespace Hamtory
                         }
                         break;
 
-                    case BattleScene.PLAYER_CHOICE:
+                    case BattleState.PLAYER_CHOICE:
                         if(input == "0")
                         {
-                            currentScene = BattleScene.MAIN;
+                            currentScene = BattleState.MAIN;
                         }
                         else
                         {
@@ -84,30 +83,66 @@ namespace Hamtory
                             }
                             else
                             {
-                                BattleResult(player, monster);
-                                currentScene = BattleScene.PLAYER_ATTACK;
+                                Battle(player, monster);
+                                if (dungeonManager.monsters.All(monster => monster.stats.HP == 0))
+                                {
+                                    Console.WriteLine("Battle!! - Result\n");
+                                    Console.WriteLine("Victory\n");
+                                    foreach (var monsters in dungeonManager.monsters)
+                                    {
+                                        Console.WriteLine($"{monsters.stats.level} {monsters.name}");
+                                        Console.WriteLine($"HP {monsters.stats.HP} -> Dead");
+                                    }
+                                    Console.WriteLine("\n0. 다음\n");
+                                    Console.Write(">> ");
+                                    input = Console.ReadLine();
+                                    if (input == "0")
+                                    {
+                                        isBattle = false;
+                                        break;
+                                    }
+                                }
+                                else if (player.stats.HP == 0)
+                                {
+                                    Console.WriteLine("Battle!! - Result\n");
+                                    Console.WriteLine("You Lose\n");
+                                    foreach (var monsters in dungeonManager.monsters)
+                                    {
+                                        Console.WriteLine($"{monsters.stats.level} {monsters.name}");
+                                        Console.WriteLine($"HP {monsters.stats.HP}");
+                                    }
+                                    Console.WriteLine("\n0. 다음\n");
+                                    Console.Write(">> ");
+                                    input = Console.ReadLine();
+                                    if (input == "0")
+                                    {
+                                        isBattle = false;
+                                        break;
+                                    }
+                                }
+                                currentScene = BattleState.PLAYER_ATTACK;
                             }
                         }
                         break;
 
-                    case BattleScene.PLAYER_ATTACK:
+                    case BattleState.PLAYER_ATTACK:
                         if(input == "0")
                         {
                             Console.WriteLine($"\n몬스터 턴으로");
-                            currentScene = BattleScene.ENEMY_TURN;
+                            currentScene = BattleState.ENEMY_ATTACK;
                         }
                         else
                         {
                             textManager.ShowChoiceErrorText();
 
                             /// 배틀 다 끝나고 메인가는지 확인
-                            isBattle = false;
-                            textManager.ShowMainMenu();
-                            dungeonManager.monsters.Clear();
+                            //isBattle = false;
+                            //textManager.ShowMainMenu();
+                            //dungeonManager.monsters.Clear();
                             ///
                         }
                         break;
-                    case BattleScene.ENEMY_TURN:
+                    case BattleState.ENEMY_ATTACK:
                         {
                             if (input == "0") 
                             {
@@ -117,7 +152,7 @@ namespace Hamtory
                                     {
                                         if (MonstertunCount > dungeonManager.monsters.Count)
                                         {
-                                            currentScene = BattleScene.MAIN;
+                                            currentScene = BattleState.MAIN;
                                             MonstertunCount = 0;
                                         }
                                         else
@@ -127,7 +162,7 @@ namespace Hamtory
                                          }
                                         break;
                                     }
-                                    BattleResult(monster, player);
+                                    Battle(monster, player);
                             }
                             if (MonstertunCount == 0)
                             {
@@ -139,7 +174,7 @@ namespace Hamtory
                                     Console.Write(">> ");
                                     break;
                                 }
-                                BattleResult(monster, player);
+                                Battle(monster, player);
                             }
                             
                             break;
@@ -149,7 +184,7 @@ namespace Hamtory
         }
 
 
-        public void BattleResult(Unit attacker, Unit defender)
+        public void Battle(Unit attacker, Unit defender)
         {
             int damage = attacker.stats.ATK;
             int originHp = defender.stats.HP;
@@ -189,6 +224,8 @@ namespace Hamtory
 
             Console.WriteLine("\n0. 다음\n");
             Console.Write(">> ");
+
+
         }
     }
 }
