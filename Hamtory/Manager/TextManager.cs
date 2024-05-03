@@ -74,12 +74,12 @@ namespace Hamtory
             Console.WriteLine("[보유골드]");
             Console.WriteLine($"{player.gold} G\n");
 
-            Console.WriteLine($"[아이템목록]");
-            ShowShopItems(shop.items);
+            Console.WriteLine("[아이템목록]  " + (1 + shop.page) + "/" + (shop.maxPage+1) +" 페이지");
+            ShowShopItems(shop.items, shop);
 
-            Console.WriteLine("\n1. 아이템 구매");
+            Console.WriteLine("\n1. 아이템 구매\n");
             Console.WriteLine("2. 다음 페이지");
-            Console.WriteLine("3. 전 페이지\n");
+            Console.WriteLine("3. 이전 페이지\n");
             Console.WriteLine("0. 나가기\n");
             ShowInputField();
         }
@@ -93,7 +93,7 @@ namespace Hamtory
             Console.WriteLine("[보유골드]");
             Console.WriteLine($"{player.gold} G\n");
 
-            Console.WriteLine($"[아이템목록]");
+            Console.WriteLine("[아이템목록  ]" + (1 + shop.page) + "/" + (shop.maxPage+1) + " 페이지");
             ShowShopItemsForBuy(shop.items, shop);
 
             Console.WriteLine("\n0. 나가기\n");
@@ -135,9 +135,9 @@ namespace Hamtory
             Console.WriteLine("원하시는 행동을 입력해주세요.");
             Console.Write(">> ");
         }
-        private void ShowShopItems(List<Item> items)
+        private void ShowShopItems(List<Item> items, ShopManager shop)
         {
-            for (int i = 0; i < items.Count; i++)
+            for (int i = 0 + 9 * shop.page; i < items.Count&& i - 9 * shop.page < 9; i++)
             {
                 Item item = items[i];
                 switch (item)
@@ -168,7 +168,7 @@ namespace Hamtory
 
         private void ShowShopItemsForBuy(List<Item> items, ShopManager shop)
         {
-            for (int i = 0+9*shop.choicePage; i < items.Count; i++)
+            for (int i = 0+9*shop.page; i < items.Count && i-9 * shop.page < 9; i++)
             {
                 Item item = items[i];
                 switch (item)
@@ -176,21 +176,21 @@ namespace Hamtory
                     case Armor armor:
                         if (armor.isBuy)
                         {
-                            Console.WriteLine($" - {i + 1} {armor.name} | 방어력 +{armor.defense} | {armor.explain} | 구매완료");
+                            Console.WriteLine($" - {i + 1 - 9 * shop.page} {armor.name} | 방어력 +{armor.defense} | {armor.explain} | 구매완료");
                         }
                         else
                         {
-                            Console.WriteLine($" - {i + 1} {armor.name} | 방어력 +{armor.defense} | {armor.explain} | {armor.price} G");
+                            Console.WriteLine($" - {i + 1 - 9 * shop.page} {armor.name} | 방어력 +{armor.defense} | {armor.explain} | {armor.price} G");
                         }
                         break;
                     case Weapon weapon:
                         if (weapon.isBuy)
                         {
-                            Console.WriteLine($" - {i + 1} {weapon.name} | 공격력 +{weapon.damage} | {weapon.explain} | 구매완료");
+                            Console.WriteLine($" - {i + 1- 9 * shop.page} {weapon.name} | 공격력 +{weapon.damage} | {weapon.explain} | 구매완료");
                         }
                         else
                         {
-                            Console.WriteLine($" - {i + 1} {weapon.name} | 공격력 +{weapon.damage} | {weapon.explain} | {weapon.price} G");
+                            Console.WriteLine($" - {i + 1- 9 * shop.page} {weapon.name} | 공격력 +{weapon.damage} | {weapon.explain} | {weapon.price} G");
                         }
                         break;
                 }

@@ -139,25 +139,25 @@ namespace Hamtory.Manager
                         {
                             currentScene = MainScene.SHOP_BUY;
                         }
-                        if ( input == "2")
+                        else if ( input == "2")
                         {
-                            ++shopManager.choicePage;
-                            if (shopManager.maxPage < shopManager.choicePage)
+                            ++shopManager.page;
+                            if (shopManager.maxPage < shopManager.page)
                             {
                                 Console.WriteLine("마지막 페이지 입니다.");
-                                --shopManager.choicePage;
+                                --shopManager.page;
                             }
                             currentScene = MainScene.SHOP;
                         }
-                        if ( input == "3")
+                        else if ( input == "3")
                         {
-                            if (shopManager.choicePage == 0)
+                            if (shopManager.page == 0)
                             {
                                 Console.WriteLine("첫 번째 페이지입니다.");
                             }
                             else
                             {
-                                --shopManager.choicePage;
+                                --shopManager.page;
                             }
                             currentScene = MainScene.SHOP;
                         }
@@ -175,7 +175,7 @@ namespace Hamtory.Manager
                         }
                         else
                         {
-                            bool isBuy = shopManager.BuyItem(int.Parse(input), player.gold);
+                            bool isBuy = shopManager.BuyItem(int.Parse(input)+ 9*shopManager.page, player.gold);
                             if (!isBuy)
                             {
                                 textManager.ShowChoiceErrorText();

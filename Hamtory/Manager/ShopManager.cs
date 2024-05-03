@@ -9,7 +9,7 @@ namespace Hamtory
     public class ShopManager
     {
         public List<Item> items = new();
-        public int choicePage = 0;
+        public int page = 0;
         public event BuyHandler OnBuy;
         public int maxPage = 0;
 
