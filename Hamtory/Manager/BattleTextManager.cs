@@ -8,7 +8,7 @@ namespace Hamtory
 {
     internal class BattleTextManager : TextManager
     {
-        public void ShowBattlemap(List<Monster> monsters)
+        public void ShowDungeon(List<Monster> monsters)
         {
             Console.WriteLine("\n---------------------------------------------------");
             Console.WriteLine("Battle!!\n");
@@ -19,7 +19,7 @@ namespace Hamtory
             ShowInputField();
         }
 
-        public void ShowBattlemapForATTACK(List<Monster> monsters)
+        public void ShowDungeonForATTACK(List<Monster> monsters)
         {
             Console.WriteLine("\n---------------------------------------------------");
             Console.WriteLine("Battle!!\n");
@@ -31,27 +31,55 @@ namespace Hamtory
             Console.Write(">> ");
         }
 
+        public void ShowVictoryText(int monsterCount, Player player)
+        {
+            Console.WriteLine("\nBattle!! - Result\n");
+            Console.WriteLine("Victory\n");
+
+            Console.WriteLine($"\n던전에서 몬스터 {monsterCount}마리를 잡았습니다.\n");
+
+            ShowHpResult(player);
+
+            Console.WriteLine("\n0. 다음\n");
+            Console.Write(">> ");
+        }
+
+        public void ShowLoseText(int monsterCount, Player player)
+        {
+            Console.WriteLine("\nBattle!! - Result\n");
+            Console.WriteLine("You Lose\n");
+
+            ShowHpResult(player);
+
+            Console.WriteLine("\n0. 다음\n");
+            Console.Write(">> ");
+        }
+
+
+
         private void ShowMonsters(List<Monster> monsters, bool isNum)
         {
+            StringBuilder sb = new();
+
             for (int i = 0; i < monsters.Count; i++)
             {
-                var stats = monsters[i].stats;
+                sb.Clear();
+                sb.Append(" -");
+                if (isNum) sb.Append($" {i + 1}");
 
-                string hp = stats.HP.ToString();
-                if (stats.HP == 0)
-                {
-                    hp = "Dead";
-                }
-              
-                if (!isNum)
-                {
-                    Console.WriteLine($"Lv.{stats.level} {monsters[i].name} HP {hp}");
-                }
-                else
-                {
-                    Console.WriteLine($"{i + 1} Lv.{stats.level} {monsters[i].name} HP {hp}");
-                }
+                var stat = monsters[i].stats;
+
+                sb.Append($" Lv.{stat.level} {monsters[i].name}");
+                sb.Append(stat.HP == 0 ? " Dead" : $" HP {stat.HP}");
+
+                Console.WriteLine(sb.ToString());
             }
+        }
+
+        private void ShowHpResult(Player player)
+        {
+            Console.WriteLine($"\nLv.{player.stats.level} {player.name}");
+            Console.WriteLine($"Hp {player.originHp} -> {player.stats.HP}");
         }
     }
 }

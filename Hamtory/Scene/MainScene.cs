@@ -22,6 +22,7 @@ namespace Hamtory
             get { return Scene; }
             set
             {
+                Console.Clear();
                 Scene = value;
                 switch (value)
                 {
@@ -92,6 +93,7 @@ namespace Hamtory
                                 break;
 
                             case "4":
+                                Console.Clear();
                                 battleManager.StartBattle(player);
                                 break;
 
@@ -137,7 +139,7 @@ namespace Hamtory
                             }
                             else
                             {
-                                textManager.ShowInventoryForEquipment(player);
+                                currentScene = MainState.INVENTORY_EQUIP;
                             }
                         }
                         break;
@@ -190,7 +192,7 @@ namespace Hamtory
                             }
                             else
                             {
-                                textManager.ShowShopForBuy(player, shopManager);
+                                currentScene = MainState.SHOP_BUY;
                             }
                         }
                         break;

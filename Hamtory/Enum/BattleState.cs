@@ -10,7 +10,6 @@ namespace Hamtory
     {
         MAIN,
         PLAYER_CHOICE,
-        PLAYER_ATTACK,
         ENEMY_ATTACK,
         VICTORY,
         LOSE
