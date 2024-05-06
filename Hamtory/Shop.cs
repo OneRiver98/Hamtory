@@ -27,7 +27,7 @@ namespace Hamtory
             items.Add(new Weapon("청동 도끼", "어디선가 사용됐던거 같은 도끼입니다.", 5, 1500));
             items.Add(new Weapon("스파르타의 창", "스파르타의 전사들이 사용했다는 전설의 창입니다.", 7, 3000));
             items.Add(new Weapon("롱소드", "어디서 많이 본 칼이다.", 10, 4500));
-            items.Add(new Weapon("피를 바라는 무한의 연사포", "괴상하게 생긴 총이다.", 20, 15000));
+            items.Add(new Weapon("무한의 연사포", "괴상하게 생긴 총이다.", 20, 15000));
             items.Add(new Weapon("화도일문자", "명검이다.", 15, 10000));
             items.Add(new Weapon("루헨델", "어떤 랭커가 사용 하던 검이다.", 30, 50000));
 

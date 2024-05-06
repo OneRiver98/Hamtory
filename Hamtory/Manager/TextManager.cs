@@ -22,8 +22,9 @@ namespace Hamtory
 
         public void ShowMainMenu()
         {
+            Console.Clear();
             Console.WriteLine("\n던전 가야대");
-            Console.WriteLine("가기 전에 정비를 하자.\n\n");
+            Console.WriteLine("가기 전에 정비를 하자.");
             Console.WriteLine("ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ");
             Console.WriteLine(" __");
             Console.WriteLine(" ____ _/  |_  ____   ");
