@@ -104,8 +104,7 @@ namespace Hamtory
                     case BattleState.ENEMY_ATTACK:
                         Console.Clear();
 
-                        var monsters = new Stack<Monster>();
-
+                        Stack<Monster> monsters = new();
                         for(int i = 0; i < dungeonManager.monsters.Count; i++)
                         {
                             if (dungeonManager.monsters[i].stats.HP != 0)
@@ -118,14 +117,19 @@ namespace Hamtory
                         {
                             Console.Clear();
                             battleManager.Battle(monsters.Pop(), player);
-                            input = Console.ReadLine();
-                            if (input == "0")
+                            input = "error";
+                            while (input != "0")
                             {
-                                continue;
-                            }
-                            else
-                            {
-                                textManager.ShowChoiceErrorText();
+                                input = Console.ReadLine();
+                                if(input == "0")
+                                {
+                                    break;
+                                }
+                                else
+                                {
+                                    textManager.ShowChoiceErrorText();
+                                }
+
                             }
                         }
 
