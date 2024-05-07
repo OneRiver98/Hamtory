@@ -1,4 +1,5 @@
 ﻿using System.Numerics;
+using System.Threading;
 
 namespace Hamtory
 {
@@ -102,48 +103,76 @@ namespace Hamtory
 
                     case BattleState.ENEMY_ATTACK:
                         Console.Clear();
-                        if (input == "0")
+
+                        var monsters = new Stack<Monster>();
+
+                        for(int i = 0; i < dungeonManager.monsters.Count; i++)
                         {
-                            MonstertunCount++;
-                            var monster = dungeonManager.AttackEnemy(MonstertunCount);
-                            if (monster == null)
+                            if (dungeonManager.monsters[i].stats.HP != 0)
                             {
-                                if (MonstertunCount > dungeonManager.monsters.Count)
-                                {
-                                    currentScene = BattleState.MAIN;
-                                    MonstertunCount = 0;
-                                }
-                                else
-                                {
-                                    Console.WriteLine("\n0. 다음\n");
-                                    Console.Write(">> ");
-                                }
-                                break;
-                            }
-                            battleManager.Battle(monster, player);
-                            var result = battleManager.GameCheck(dungeonManager.monsters, player);
-                            if(result.HasValue)
-                            {
-                                currentScene = BattleState.LOSE;
+                                monsters.Push(dungeonManager.monsters[i]);
                             }
                         }
-                        if (MonstertunCount == 0)
+
+                        while(monsters.Count != 0)
                         {
-                            MonstertunCount++;
-                            var monster = dungeonManager.AttackEnemy(MonstertunCount);
-                            if (monster == null)
+                            Console.Clear();
+                            battleManager.Battle(monsters.Pop(), player);
+                            input = Console.ReadLine();
+                            if (input == "0")
                             {
-                                Console.WriteLine("\n0. 다음\n");
-                                Console.Write(">> ");
-                                break;
+                                continue;
                             }
-                            battleManager.Battle(monster, player);
-                            var result = battleManager.GameCheck(dungeonManager.monsters, player);
-                            if (result.HasValue)
+                            else
                             {
-                                currentScene = BattleState.LOSE;
+                                textManager.ShowChoiceErrorText();
                             }
                         }
+
+                        currentScene = BattleState.MAIN;
+
+                        //if (input == "0")
+                        //{
+                        //    MonstertunCount++;
+                        //    var monster = dungeonManager.AttackEnemy(MonstertunCount);
+                        //    if (monster == null)
+                        //    {
+                        //        if (MonstertunCount > dungeonManager.monsters.Count)
+                        //        {
+                        //            currentScene = BattleState.MAIN;
+                        //            MonstertunCount = 0;
+                        //        }
+                        //        else
+                        //        {
+                        //            Console.WriteLine("\n0. 다음\n");
+                        //            Console.Write(">> ");
+                        //        }
+                        //        break;
+                        //    }
+                        //    battleManager.Battle(monster, player);
+                        //    var result = battleManager.GameCheck(dungeonManager.monsters, player);
+                        //    if(result.HasValue)
+                        //    {
+                        //        currentScene = BattleState.LOSE;
+                        //    }
+                        //}
+                        //if (MonstertunCount == 0)
+                        //{
+                        //    MonstertunCount++;
+                        //    var monster = dungeonManager.AttackEnemy(MonstertunCount);
+                        //    if (monster == null)
+                        //    {
+                        //        Console.WriteLine("\n0. 다음\n");
+                        //        Console.Write(">> ");
+                        //        break;
+                        //    }
+                        //    battleManager.Battle(monster, player);
+                        //    var result = battleManager.GameCheck(dungeonManager.monsters, player);
+                        //    if (result.HasValue)
+                        //    {
+                        //        currentScene = BattleState.LOSE;
+                        //    }
+                        //}
                         break;
 
                     case BattleState.VICTORY:

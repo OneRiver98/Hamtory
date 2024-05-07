@@ -65,7 +65,7 @@ namespace Hamtory
             Console.WriteLine("\\/                  \\/               \\/         \\/         \\/");
             Console.WriteLine();
             Console.WriteLine();
-            Console.WriteLine("원하시는 이름을 설정해주세요.");
+            ShowTitle("원하시는 이름을 설정해주세요.");
         }
 
 
@@ -150,8 +150,10 @@ namespace Hamtory
             Console.WriteLine($"이름   : {player.name}");
             Console.WriteLine($"Lv. {player.stats.level}");
             // Console.WriteLine($"직업   : {player.job}");
-            Console.WriteLine($"공격력 : {player.stats.ATK} (+{player.inventory.equipmentStats.ATK})");
-            Console.WriteLine($"방어력 : {player.stats.DEF} (+{player.inventory.equipmentStats.DEF})");
+            Console.Write($"공격력 : {player.stats.ATK} ");
+            TextHighlights("(", $"+{player.inventory.equipmentStats.ATK}", ")");
+            Console.Write($"방어력 : {player.stats.DEF} ");
+            TextHighlights("(", $"+{player.inventory.equipmentStats.DEF}", ")");
             Console.WriteLine($"체  력 : {player.stats.HP}");
             Console.WriteLine($"Gold   : {player.gold}");
         }
@@ -171,10 +173,10 @@ namespace Hamtory
                 switch (item)
                 {
                     case Armor armor:
-                        sb.Append($" {PadRightForMixedText(armor.name,20)} | 방어력 +{armor.defense} | {PadRightForMixedText(armor.explain,50)} |");
+                        sb.Append($" {PadRightForMixedText(armor.name,20)} | 방어력 +{PadRightForMixedText(armor.defense.ToString(), 3)} | {PadRightForMixedText(armor.explain,50)} |");
                         break;
                     case Weapon weapon:
-                        sb.Append($" {PadRightForMixedText(weapon.name,20)} | 공격력 +{weapon.damage} | {PadRightForMixedText(weapon.explain,50)} |");
+                        sb.Append($" {PadRightForMixedText(weapon.name,20)} | 공격력 +{PadRightForMixedText(weapon.damage.ToString(), 3)} | {PadRightForMixedText(weapon.explain,50)} |");
                         break;
                 }
 
@@ -190,20 +192,27 @@ namespace Hamtory
 
             for (int i = 0; i < equipments.Count; i++)
             {
+                int num = 20;
+
+
                 sb.Clear();
                 sb.Append(" -");
                 Equipment equipment = equipments[i];
 
                 if(isNum) sb.Append($" {i + 1}");
-                if(equipment.isEquip) sb.Append($" [E]");
+                if (equipment.isEquip)
+                {
+                    sb.Append($" [E]");
+                    num = 16;
+                }
 
                 switch (equipment)
                 {
                     case Armor armor:
-                        sb.Append($" {PadRightForMixedText(armor.name,20)} | 방어력 +{armor.defense} | {PadRightForMixedText(armor.explain,50)}");
+                        sb.Append($" {PadRightForMixedText(armor.name, num)} | 방어력 +{PadRightForMixedText(armor.defense.ToString(), 3)} | {PadRightForMixedText(armor.explain,50)}");
                         break;
                     case Weapon weapon:
-                        sb.Append($" {PadRightForMixedText(weapon.name,20)} | 방어력 +{weapon.damage} | {PadRightForMixedText(weapon.explain,50)}");
+                        sb.Append($" {PadRightForMixedText(weapon.name, num)} | 공격력 +{PadRightForMixedText(weapon.damage.ToString(), 3)} | {PadRightForMixedText(weapon.explain,50)}");
                         break;
                 }
 
