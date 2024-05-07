@@ -8,6 +8,22 @@ namespace Hamtory
 {
     public class TextManager
     {
+        public void ShowTitle(string title)
+        {
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.WriteLine(title);
+            Console.ResetColor();
+        }
+
+        public void TextHighlights(string s1, string s2, string s3 = "")
+        {
+            Console.Write(s1);
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.Write(s2);
+            Console.ResetColor();
+            Console.WriteLine(s3);
+        }
+
         public void ShowChoiceErrorText()
         {
             Console.WriteLine("\n잘못된 입력입니다.");

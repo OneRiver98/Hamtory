@@ -9,6 +9,8 @@ namespace Hamtory
 {
     public class BattleManager
     {
+        private BattleTextManager textManager = new();
+
         public void Battle(Unit attacker, Unit defender)
         {
             int damage = attacker.stats.ATK;
@@ -35,7 +37,7 @@ namespace Hamtory
 
             Console.WriteLine($"\n{attacker.name}의 공격 !");
             Console.WriteLine(critical ? "치명타!" : "");
-            Console.WriteLine($"{defender.stats.level} {defender.name}을(를) 맞췄습니다. 데미지 : [{damage}]");
+            textManager.ShowTitle($"Lv{defender.stats.level} {defender.name}을(를) 맞췄습니다. 데미지 : [{damage}]");
 
             Console.WriteLine($"\n{defender.stats.level} {defender.name}");
             if (defender.stats.HP == 0)
