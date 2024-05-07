@@ -15,9 +15,9 @@ namespace Hamtory
             int damage = attacker.stats.ATK;
             int originHp = defender.stats.HP;
             bool critical = false;
+            Random random = new Random();
             if (attacker is Player)
             {
-                Random random = new Random();
                 int probability = random.Next(100);
                 var player = (Player)attacker;
 
@@ -32,6 +32,10 @@ namespace Hamtory
                     damage += player.inventory.equipmentStats.ATK;
                 }
             }
+
+            float damageMultiplier = (float)random.Next(90, 110) / 100;
+            damage = (int)(damage * damageMultiplier);
+
             defender.OnAttack(damage);
 
             Console.WriteLine($"\n{attacker.name}의 공격 !");
